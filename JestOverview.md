@@ -96,7 +96,7 @@ Throughout my year-long co-op placement as a software developer I saw an increas
 Already having experience with unit testing, it was interesting to learn about Jest. I found Jest easy to use, with great documentation on the Jest website, as well as external sources of information including videos and articles.
 
 ## **Reflection on Working with Jest**
-As I previously mentioned, I found Jest easy to work with and enjoyable to read the documentation and try implementing various tests in my small demonstrative project. 
+As I previously mentioned, I found Jest easy to work with and enjoyable to read the documentation and try implementing various tests in my small demonstrative project. I found https://dev.to/zirkelc/how-to-test-console-log-5fhd and https://geshan.com.np/blog/2022/06/jest-beforeeach/ to be helpful resources when working on this project. 
 
 ### **Recommendation** 
 I would definitely recommend this framework to someone looking for a JavaScript testing framework. I found that it was very easy to set up and quickly start writing and running tests. For more complex tasks, I found that the documentation on Jest's website to be a great starting point. So far, Jest feels intuitive to use and I feel that it would be a great addition to a project with JavaScript where unit testing could prove useful. 
