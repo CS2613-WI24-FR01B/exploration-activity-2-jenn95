@@ -52,22 +52,39 @@ I have selected some key functionalities of Jest below, some of which I have imp
 Those familiar with other common unit testing frameworks such as JUnit will be familiar with setup and teardown. Jest allows for
      BeforeEach, BeforeAll, AfterEach, and AfterAll hooks to be used to simplify testing. 
 
+Below we see BeforeEach is used to set up a mocked JobClient. Before each test is run, the contents of BeforeEach will be executed. 
+
+https://github.com/CS2613-WI24-FR01B/exploration-activity-2-jenn95/blob/62a99f1799aa751b1c3c593d8c8e46971aa8e090/test/RunJobClient.test.js#L12-L14
 
 ### **2. Descriptions**
 Jest allows for nesting of descriptions and encourages users to write meaningful description and test names when creating tests. These are displayed in errors or with the CLI option --verbose used when running the tests. 
+
 For example:
+
 ![Screen Shot 2024-03-29 at 4 21 01 PM](https://github.com/CS2613-WI24-FR01B/exploration-activity-2-jenn95/assets/112823585/b39103f4-2b57-421a-ab08-3fa0d52d0dfb)
-Having well described and organized tests makes maintaining the code base much easier as it is easy to read each test and at a glance understand what is passing or failing. 
+
+Having well described and organized tests makes maintaining the code base much easier as it is easy to read each test and at a glance understand what is passing or failing. Below is a snippet of the code that produced the output seen above:
+
+https://github.com/CS2613-WI24-FR01B/exploration-activity-2-jenn95/blob/62a99f1799aa751b1c3c593d8c8e46971aa8e090/test/JavaScript1.test.js#L30-L37
 
 
 ### **3. Mocking**
 In unit testing, it is common to mock some functions so that an area of the code that you are looking to test can be isolated [[ref]](https://medium.com/smallcase-engineering/testing-fundamentals-mocking-11cc5301df01). Jest provides developers multiple options for mocking. Mock functions created in Jest tests can be used in various ways to assist in testing [[ref]](https://jestjs.io/docs/mock-functions). One common implementation of mocking that I utilized in my demo is mocking a return value. This can be seen in the code snippet below. 
 
+https://github.com/CS2613-WI24-FR01B/exploration-activity-2-jenn95/blob/62a99f1799aa751b1c3c593d8c8e46971aa8e090/test/RunJobClient.test.js#L5-L9
 
-Here, 
+Here, we mock the axios connection with jest.fn(). Then below, we provide the value that a call to the axios connection by the request function should return:
 
-### **4. Snapshot Testing**
-This is not something that I employed in my demo, but I feel that it is an important attribute for a front-end testing framework to have and is worth mentioning in this report. Snapshot testing can be used to check UI components. 
+https://github.com/CS2613-WI24-FR01B/exploration-activity-2-jenn95/blob/62a99f1799aa751b1c3c593d8c8e46971aa8e090/test/RunJobClient.test.js#L684
+
+Then, we do not have to actually rely on API results to test certain functionalities of our program. 
+
+### **4. Other Jest Functionalities**
+#### **Snapshot Testing**
+This is not something that I employed in my demo, but I feel that it is an important attribute for a front-end testing framework to have and is worth mentioning in this report. Snapshot testing can be used to check UI components [[ref]](https://jestjs.io/docs/snapshot-testing).
+
+#### **Async Functions**
+Jest has capabilities for working with asynchronous code as well, providing users options for using promises or async/await [[ref]](https://jestjs.io/docs/asynchronous). 
    
 ## **Jest Creation**
 Jest was created by Facebook (now Meta) in 2016. When Facebook's chat feature was being implemented in JavaScript, Jest was born as an easy to use, low-configuration testing framework with high performance capability. It was maintained part-time by Meta engineers as well as community members as an open source framework. The majority of contributions since 2018 have been made by community members rather than Meta engineers. In 2022, Jest was transferred from Meta Open Source to the OpenJS Foundation  [[ref]](https://engineering.fb.com/2022/05/11/open-source/jest-openjs-foundation/).
