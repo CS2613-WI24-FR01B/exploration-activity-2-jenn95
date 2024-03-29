@@ -61,26 +61,29 @@ Having well described and organized tests makes maintaining the code base much e
 
 
 ### **3. Mocking**
+In unit testing, it is common to mock some functions so that an area of the code that you are looking to test can be isolated [[ref]](https://medium.com/smallcase-engineering/testing-fundamentals-mocking-11cc5301df01). Jest provides developers multiple options for mocking. Mock functions created in Jest tests can be used in various ways to assist in testing [[ref]](https://jestjs.io/docs/mock-functions). One common implementation of mocking that I utilized in my demo is mocking a return value. This can be seen in the code snippet below. 
 
+
+Here, 
+
+### **4. Snapshot Testing**
+This is not something that I employed in my demo, but I feel that it is an important attribute for a front-end testing framework to have and is worth mentioning in this report. Snapshot testing can be used to check UI components. 
    
-
-
-
 ## **Jest Creation**
-Funny enough, Flask was actually releasted as an April Fool's Day joke in 2010 by developer Armin Ronacher. Flask is more "pythonic" in nature than other web frameworks that rely on boiler plate code or dependencies [[ref]](https://www.educative.io/courses/flask-develop-web-applications-in-python/what-is-flask#Origins-of-Flask). This can feel more intuitive and lightweight for developers, and this framework met this desire as Flask became very popular and maintains popularity today [[ref]](https://www.fullstackpython.com/flask.html).
+Jest was created by Facebook (now Meta) in 2016. When Facebook's chat feature was being implemented in JavaScript, Jest was born as an easy to use, low-configuration testing framework with high performance capability. It was maintained part-time by Meta engineers as well as community members as an open source framework. The majority of contributions since 2018 have been made by community members rather than Meta engineers. In 2022, Jest was transferred from Meta Open Source to the OpenJS Foundation  [[ref]](https://engineering.fb.com/2022/05/11/open-source/jest-openjs-foundation/).
 
 ## **Motivation for Choosing Jest**
-I really wanted to take advantage of this exploration activity and use it as an opportunity to learn about different packages/libraries/frameworks, but also to be able to build on an area that I consider to be a weakness of mine. Web development is something that I am still uncomfortable with, particularly interacting with HTML pages and servers, even after being in a year-long co-op position as a full stack developer. Since Python is considered to be an easier language, and that it is likely that I will be applying to full-stack jobs following graduation, I thought it was a great opportunity to work with a web development framework. After much research, through reading documentation, tutorials, and watching videos, I decided on Flask for my first exploration activity to get a sense of the underpinnings of web development frameworks, since it is a micro-framework, there is less under the hood and can be easier to develop a deeper understanding as a learner. 
+Throughout my year-long co-op placement as a software developer I saw an increased focus on quality assurance, including unit testing. We used JUnit, which I was also exposed to in my coursework in CS2043. I was interested in exploring a different testing framework for a different language. Unit testing is key to effectivly creating and maintaining a correct codebase that adheres to requirements. 
 
 ## **Learning Experience**
-I found a fantastic tutorial on YouTube, by Michael Herman of RealPython. This resource had an accompanying blog post for each tutorial video, which was important in really digesting what was being presented in the videos, which can be found on the [blog](https://realpython.com/introduction-to-flask-part-1-setting-up-a-static-site/) and [video channel](https://www.youtube.com/playlist?list=PLLjmbh6XPGK4ISY747FUHXEl9lBxre4mM). This is the third small demo project I started for this task and I have discovered more about how I like to approach a new task and what works for me. Throughout my co-op I was encouraged to use ChatGPT for questions about the framework we were using because the documentation wasn't the best for some situations, and recognized during this process, without the access to ChatGPT or senior developers, how frustrating it can be when you want to do something very simple and cannot seem to find the answer to your problem. Compared to the other frameworks I explored, I found that Flask has much better resources for beginners. That being said, I think it would take me a long time to become proficient in a framework, unless I really dig in and make detailed notes and examples on different use cases. 
+Already having experience with unit testing, it was interesting to learn about Jest. I found Jest easy to use, with great documentation on the Jest website, as well as external sources of information including videos and articles.
 
 ## **Reflection on Working with Jest**
-As I previously mentioned, I have worked with frameworks in the past, and throughout the process of working with Flask there were multiple instances where I thought something was a really nifty feature. I also imported a simple library, Twilio, to show how Flask can help integrate users with the libraries that the developer has used to implement certain features. In this case, Flask allowed me to collect a cell phone number that a user provides, and return the information to my python function to use the functions of the twilio library and handle this user request.  
+As I previously mentioned, I found Jest easy to work with and enjoyable to read the documentation and try implementing various tests in my small demonstrative project. 
 
 ### **Recommendation** 
-I would definitely recommend this framework to a beginner in Python that was still learning the language and wanted to move into some web development projects and utilize a framework. It feels very intuitive and neat using Flask, which I feel really complements working in Python since the lanaguage itself is very explicit.
+I would definitely recommend this framework to someone looking for a JavaScript testing framework. I found that it was very easy to set up and quickly start writing and running tests. For more complex tasks, I found that the documentation on Jest's website to be a great starting point. So far, Jest feels intuitive to use and I feel that it would be a great addition to a project with JavaScript where unit testing could prove useful. 
 
 ### **Personal Use**
-With the intuitive nature, I found it enjoyable to use. There were many times that I thought a functionality described was very neat, and I just scratched the surface of possibilities with this framework. I could see myself continuing to build small personal projects with this framework to get better at reading and applying what I have learned from documentation and online resources. Since Flask is popular there are a lot of great resources which makes a big difference when learning something new. 
+There are many facets of this framework that I did not have the chance to explore and am looking forward to having the time to check out some of the other features of Jest after finishing this semester. 
 
