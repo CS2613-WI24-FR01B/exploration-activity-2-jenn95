@@ -17,7 +17,7 @@ To install npm after installing node:
 ```
 $ node install -g npm
 ```
-Tests can be created in JavaScript files. The typial naming format is <file-under-test>.test.js
+Tests can be created in JavaScript files. The typial naming format is 'file-under-test'.test.js
 
 ```
 const file-under-test = require('./<file-under-test>');
@@ -36,7 +36,7 @@ module.exports.someFunction = function someFunction(someParam){
 ```
 With this, someFunction can be called from the test file and the function can be used in various tests. 
 
-Now, nagivating to the project folder in the command line, you should able to run the tests:
+Now, navigating to the project folder in the command line, you should able to run the tests:
 ```
 $ npm test
 ```
