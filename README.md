@@ -15,6 +15,7 @@ To install npm after installing node:
 ```
 $ node install -g npm
 ```
+(Though I would recommend using `$ npm install` as it will install other dependencies such as axios if needed).
 
 Now, nagivating to the project folder in the command line, you should able to run the tests:
 ```
