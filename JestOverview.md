@@ -46,7 +46,7 @@ This will run the script in package.json. There are some CLI options selected to
 
 
 ## **Functionalities of Jest**
-I have selected some key functionalities of Flask below, some of which I have implemented in my demo project.
+I have selected some key functionalities of Jest below, some of which I have implemented in my demo project.
 
 ### **1. Setup and Teardown**
 Those familiar with other common unit testing frameworks such as JUnit will be familiar with setup and teardown. Jest allows for
